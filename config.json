@@ -1,0 +1,23 @@
+{
+  "Addr": ":2081",
+  "Oauth": {
+    "ClientID": "<client_id>",
+    "ClientSecret": "<client_secret>",
+    "Endpoint": {
+      "AuthURL": "http://<accounts_host>/oauth2/authorize",
+      "TokenURL": "http://<accounts_host>/oauth2/token",
+      "RevokeURL": "http://<accounts_host>/oauth2/revoke",
+      "IntrospectURL": "http://<accounts_host>/oauth2/introspect"
+    },
+    "RedirectURL": "http://localhost:2081/sso/callback",
+    "Scopes": ["userinfo"]
+  },
+  "Account": {
+    "LogoutURL": "http://<accounts_host>/account/logout"
+  },
+  "CookieHostMapper": {
+    "tiup.us":"tiup.us",
+    "tiup.cn":"tiup.cn",
+    "v.ruc.edu.cn": "ruc.edu.cn"
+  }
+}
