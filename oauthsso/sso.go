@@ -8,7 +8,6 @@ import (
 	"net/url"
 	"strings"
 	"net/http/httputil"
-	"fmt"
 )
 
 type Server struct {
